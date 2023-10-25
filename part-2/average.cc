@@ -9,9 +9,14 @@ int main(int argc, char* argv[]) {
 
   // TODO: Validate that there is at least one command line argument.
   // If not, print an error message and return a non-zero value.
+  if(arguments.size() != 2) {
+  std::cout << "Error: You must have one number.\n";
+  return 1;
+}
 
   // TODO: Write a for-each loop to sum (add up) all of the command line
   // arguments.
+
   // Use a double or float type so that your program preserves fractional
   // values.
   // The loop needs to skip over the command name, which is the first element
@@ -26,6 +31,6 @@ int main(int argc, char* argv[]) {
   // TODO: Use cout to print out a message of the form
   // average = *AVERAGE*
   // on its own line.
-
+  std::cout << "average = *AVERAGE*\n";
   return 0;
 }
