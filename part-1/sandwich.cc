@@ -13,8 +13,8 @@ int main(int argc, char* argv[]) {
   // TODO: Validate that the number of arguments is correct.
   // If not, print an error message and return a non-zero value.
   if (arguments.size() != 4) {
-    std::cout << "Error: You must supply three arguments\n"; 
-  return 1;
+    std::cout << "Error: You must supply three arguments\n";
+    return 1;
   }
 
   // TODO: Declare three std::string variables to hold the
@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
   // TODO: Use cout to print output following the pattern
   // Your order: A *PROTEIN* sandwich on *BREAD* with *CONDIMENT*.
   // on its own line.
-    std::cout << "Your order: A " << protein << "Sandwich on: "
-              << bread << "With: " << condiment << "\n";
+  std::cout << "Your order: A " << protein << "Sandwich on: " << bread
+            << "With: " << condiment << "\n";
   return 0;
 }
